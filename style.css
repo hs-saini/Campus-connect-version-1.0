@@ -154,50 +154,6 @@ button {
   margin: 5px 0 0;
 }
 
-.admin-page-link {
-  display: grid;
-  min-height: 42px;
-  margin: 12px 8px 0;
-  place-items: center;
-  border: 1px solid #4c4b66;
-  border-radius: 9px;
-  background: #302f48;
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.logout-link {
-  width: calc(100% - 16px);
-  background: transparent;
-  color: #ffb6a8;
-  cursor: pointer;
-}
-
-.role-tabs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin: 14px 0;
-}
-
-.role-tab {
-  min-height: 40px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-}
-
-.role-tab.active {
-  border-color: #6654d9;
-  background: #f0edff;
-  color: #5543c8;
-}
-
 .main {
   width: min(100% - 252px, 1620px);
   min-height: 100vh;
@@ -279,41 +235,8 @@ button {
 }
 
 .view[hidden],
-.modalbg[hidden],
-.student-details-card[hidden],
-#editStudentDetails[hidden],
-#studentDetailsEmpty[hidden] {
+.modalbg[hidden] {
   display: none;
-}
-
-.student-details-card {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: var(--line);
-}
-
-.student-detail {
-  display: grid;
-  min-height: 82px;
-  align-content: center;
-  gap: 8px;
-  padding: 16px 19px;
-  background: #fff;
-}
-
-.student-detail small {
-  color: var(--muted);
-  font-size: 11px;
-}
-
-.student-detail strong {
-  overflow-wrap: anywhere;
-  color: var(--ink);
-  font-size: 13px;
 }
 
 .welcome {
@@ -946,10 +869,6 @@ select:focus-visible {
   text-align: center;
 }
 
-#studentDetailsEmpty p {
-  margin-bottom: 16px;
-}
-
 .adminnote {
   margin: 12px 0 0;
   color: var(--muted);
@@ -1124,306 +1043,6 @@ select:focus-visible {
   transform: translateY(0);
 }
 
-.topbar-actions,
-.welcome .btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.topbar-actions {
-  justify-content: flex-end;
-}
-
-.admin-login {
-  min-height: 36px;
-  padding: 0 12px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fff;
-  color: #5543c8;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.scanner-button {
-  background: #24233a;
-}
-
-.table-action {
-  min-height: 28px;
-  margin: 2px;
-  padding: 0 8px;
-  border: 0;
-  border-radius: 6px;
-  background: #f0edff;
-  color: #5543c8;
-  font-size: 10px;
-  font-weight: 700;
-}
-
-.danger-action {
-  background: #ffe9e4;
-  color: #b44f3e;
-}
-
-.verify-action,
-.pass-action {
-  display: block;
-  margin-top: 5px;
-  background: #e9f4ed;
-  color: #23804d;
-}
-
-.entry-used {
-  display: block;
-  color: #b44f3e;
-}
-
-.muted-inline {
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.eventart.has-photo {
-  background-size: cover;
-  background-position: center;
-}
-
-.eventart.has-photo::before,
-.eventart.has-photo::after,
-.eventart.has-photo .eventart-icon {
-  display: none;
-}
-
-.eventart.has-photo .eventart-label {
-  padding: 5px 8px;
-  border-radius: 12px;
-  background: rgb(36 35 58 / 78%);
-  color: #fff;
-}
-
-.modal-pass {
-  width: min(100%, 520px);
-  text-align: center;
-}
-
-.entry-pass {
-  overflow: hidden;
-  border: 1px solid #dedbd2;
-  border-radius: 14px;
-  background: #fff;
-  text-align: left;
-  box-shadow: 0 12px 35px rgb(36 35 58 / 12%);
-}
-
-.pass-brand {
-  padding: 12px 18px;
-  background: #24233a;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 800;
-}
-
-.pass-brand span {
-  color: #ff9986;
-}
-
-.pass-photo {
-  height: 150px;
-  background: linear-gradient(135deg, #ded8ff, #ffb59e);
-  background-size: cover;
-  background-position: center;
-}
-
-.generated-pass-photo::before {
-  display: grid;
-  height: 100%;
-  place-items: center;
-  color: #5543c8;
-  content: "OFFICIAL EVENT PASS";
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1px;
-}
-
-.pass-body {
-  padding: 17px 18px;
-  text-align: center;
-}
-
-.pass-kicker {
-  color: #a15a50;
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: 1.2px;
-}
-
-.pass-body h3 {
-  margin: 6px 0 3px;
-  font-size: 20px;
-}
-
-.pass-body > p {
-  margin: 0 0 12px;
-  color: #6654d9;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.pass-details {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-  margin-bottom: 12px;
-  text-align: left;
-}
-
-.pass-details div {
-  min-width: 0;
-  padding: 8px;
-  border-radius: 8px;
-  background: #f7f6f2;
-}
-
-.pass-details small,
-.pass-details strong {
-  display: block;
-}
-
-.pass-details small {
-  color: var(--muted);
-  font-size: 8px;
-  text-transform: uppercase;
-}
-
-.pass-details strong {
-  margin-top: 3px;
-  font-size: 10px;
-  overflow-wrap: anywhere;
-}
-
-.pass-qr {
-  display: flex;
-  justify-content: center;
-  min-height: 150px;
-}
-
-.pass-body > small {
-  color: var(--muted);
-  font-size: 8px;
-  word-break: break-all;
-}
-
-.pass-actions {
-  flex-wrap: wrap;
-}
-
-.email-pass {
-  display: inline-grid;
-  place-items: center;
-  text-decoration: none;
-}
-
-.qr-reader {
-  width: 100%;
-  min-height: 180px;
-  margin: 10px 0 16px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.scanner-actions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 12px;
-}
-
-.qr-file-button {
-  display: inline-grid;
-  place-items: center;
-  background: #fff;
-  border: 1px solid var(--line);
-  color: var(--ink);
-  text-decoration: none;
-}
-
-.qr-preview,
-.payment-qr {
-  display: grid;
-  place-items: center;
-}
-
-.qr-preview {
-  min-height: 120px;
-  margin-top: 10px;
-  border: 1px dashed #d4d0c8;
-  border-radius: 10px;
-  background: #fff;
-}
-
-.qr-preview img,
-.payment-qr img {
-  max-width: 180px;
-  max-height: 180px;
-  border-radius: 8px;
-  object-fit: contain;
-}
-
-.scanner-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
-  gap: 18px;
-  align-items: start;
-}
-
-.scan-result {
-  min-height: 44px;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
-  background: #f7f6f2;
-  font-size: 12px;
-  text-align: center;
-}
-
-.scan-result.success {
-  background: #e9f4ed;
-  color: #23784c;
-}
-
-.scan-result.error {
-  background: #ffe9e4;
-  color: #b44f3e;
-}
-
-.entry-success-modal {
-  max-width: 430px;
-  text-align: center;
-}
-
-.success-icon {
-  display: grid;
-  width: 74px;
-  height: 74px;
-  margin: 0 auto 12px;
-  place-items: center;
-  border-radius: 50%;
-  background: #e9f4ed;
-  color: #23784c;
-  font-size: 38px;
-  font-weight: 800;
-  box-shadow: 0 0 0 8px #f3faf6;
-}
-
-.entry-success-modal p {
-  color: var(--muted);
-  line-height: 1.7;
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1453,8 +1072,7 @@ select:focus-visible {
 
 @media (max-width: 760px) {
   .formgrid,
-  .payment-section,
-  .scanner-layout {
+  .payment-section {
     grid-template-columns: 1fr;
   }
   .sidebar {
@@ -1560,10 +1178,6 @@ select:focus-visible {
 
   .welcome > .btn {
     align-self: stretch;
-  }
-
-  .student-details-card {
-    grid-template-columns: 1fr;
   }
 
   .hero {
